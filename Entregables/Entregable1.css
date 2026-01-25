@@ -1,0 +1,68 @@
+.container { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 columnas iguales */
+  grid-template-rows: auto 200px auto;    /* header, zona media fija, footer */
+  gap: 10px;
+  
+}
+
+
+.titulo {
+  background-color: olive;
+  grid-column: 1/2;
+  
+  
+}
+
+.listas {                
+  grid-column: 3/4;   
+  grid-row: 2/3;
+  border: 2px solid brown;        
+}
+
+.tabla1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 2px solid brown;
+    
+}
+
+.tabla2{
+    text-align: left;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    border: 2px solid brown;
+}
+
+body{
+    font-style:italic;
+
+}
+
+#nombre{
+    text-align: center;
+}
+
+img{
+    display:block;
+    margin: 0 auto;
+}
+
+.links{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border: 2px solid brown;
+}
+
+.lenguajes{
+    background-color: beige;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+}
+
+.Mision{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 2px solid brown;
+}
