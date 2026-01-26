@@ -144,3 +144,48 @@ img{
     grid-column: 1 / -1;
   }
 }
+
+
+@media (min-width: 1025px) {
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 200px auto;
+    gap: 10px;
+  }
+
+  .titulo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+  }
+
+  .lenguajes {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .listas {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .tabla1 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .tabla2 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+
+  .links {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .Mision {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
