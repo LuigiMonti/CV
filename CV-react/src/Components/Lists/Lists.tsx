@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="Lists.css"></link>
+import './Lists.css'
 
 
 function Listas(optional: any){
