@@ -1,5 +1,5 @@
 import Header from './Components/Header/Header'
-import Hero from './Components/Hero/Hero'
+import Hero from './Components/Luis/Luis'
 import Nav from './Components/Nav/Nav'
 import Listas from './Components/Lists/Lists'
 import './App.css'

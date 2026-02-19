@@ -1,14 +1,14 @@
-#hero {
+#luis {
   display: flex;
   height: 420px;
 }
 
-#hero-left {
-  flex: 1;
+#luis-left {
+  flex: 0 0 280px;
   background-color: #2d5a27;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 12px;
   padding: 32px;
@@ -20,10 +20,14 @@
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
-  border: 4px solid #a8c5a0;
+  border: 4px solid #8b5e3c;
+  outline: 3px solid #c4956a;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px #5c3d1e, 0 4px 16px rgba(92, 61, 30, 0.5);
+  align-self: center;
 }
 
-#hero-left h1 {
+#luis-left h1 {
   color: #f5f0e8;
   font-size: 28px;
   text-align: center;
@@ -31,21 +35,23 @@
   letter-spacing: 1px;
 }
 
-#hero-left p {
+#luis-left p {
   color: #a8c5a0;
   font-size: 16px;
   letter-spacing: 4px;
   text-transform: uppercase;
   font-family: Georgia, serif;
+  align-self: center;
 }
 
-#hero-right {
-  flex: 2;
+#luis-right {
+    flex: 1;
   overflow: hidden;
 }
 
-#hero-right img {
+#luis-right img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
 }
