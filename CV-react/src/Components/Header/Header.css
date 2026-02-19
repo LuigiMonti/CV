@@ -1,0 +1,34 @@
+#header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 24px;
+  background-color: #1a3a15;
+}
+
+#contacts-badge {
+  background-color: #2d5a27;
+  border: 3px solid #a8c5a0;
+  border-radius: 50px;
+  padding: 8px 24px;
+}
+
+#contacts-badge span {
+  color: #f5f0e8;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#header-links {
+  display: flex;
+  gap: 12px;
+}
+
+#header-links img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
