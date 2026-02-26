@@ -1,17 +1,13 @@
 import './Lists.css'
+import { ColorPipe } from '../../Pipes/Pipex'
 
 
-function Listas(optional: any){
+function Listas({titulo, items}: {titulo: string, items: string[]}){
     return(
         <div className="listas">
-            <h3>{optional.titulo}</h3>
+            <h3>{titulo}</h3>
           <ul>
-            <li>🌿{optional.uno}</li>
-            <li>🌿{optional.dos}</li>
-            {optional.tres && <li>🌿{optional.tres}</li>} 
-            {optional.cuatro && <li>🌿{optional.cuatro}</li>} 
-            {optional.cinco && <li>🌿{optional.cinco}</li>} 
-            {optional.seis && <li>🌿{optional.seis}</li>} 
+            {items.map((items, i) => <li key={i}><ColorPipe text={items} tipo={titulo.toLocaleLowerCase()}/></li>)}
 
             
           </ul>
