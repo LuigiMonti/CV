@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import pokeService from '../../Services/Pokeapi_service';
-import './Pokemons.css';
+import './poke.css';
 
 function Pokemons() {
   const [pokemons, setPokemons] = useState<any[]>([]);

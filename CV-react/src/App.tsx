@@ -4,6 +4,8 @@ import Nav from './Components/Nav/Nav'
 import Listas from './Components/Lists/Lists'
 import './App.css'
 import DataServices from './Services/services'
+import Repos from './Components/Repos/Repos'      
+import Poke from './Components/Poke/poke' 
 
 function App() {
   return (
@@ -23,7 +25,15 @@ function App() {
       <section id='skills'>
         <Listas titulo='Skills' items={DataServices.skills}/>
       </section>
+
+
+      <section id='proyectos'>
+        <Repos />                
+      </section>
+
+      <Poke />   
     </div>
+
   )
 }
 

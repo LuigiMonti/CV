@@ -1,4 +1,3 @@
-// services/githubService.ts
 
 const GITHUB_USER = 'LuigiMonti';
 

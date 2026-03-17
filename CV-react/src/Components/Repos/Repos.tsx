@@ -1,7 +1,6 @@
 // Components/Repos/Repos.tsx
 
 import { useState, useEffect } from 'react';
-import './Repos.css';
 import githubService from '../../Services/Github_service';
 
 function Repos() {
