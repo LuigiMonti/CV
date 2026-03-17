@@ -1,0 +1,21 @@
+/* Components/Pokemons/Pokemons.css */
+
+#easter-egg {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  display: flex;
+  gap: 0px;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+  z-index: 100;
+}
+
+#easter-egg:hover {
+  opacity: 1;
+}
+
+#easter-egg img {
+  width: 48px;
+  height: 48px;
+}
