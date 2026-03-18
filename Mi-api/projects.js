@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // Base de datos en memoria
-let experiences = [
+let experience = [
   {
     id: 1,
     company: '',
@@ -52,19 +52,15 @@ let experiences = [
 
 let nextId = 4;
 
-// GET / - Bienvenida
-app.get('/', (req, res) => {
-    res.json({ message: 'Bienvenido a la API de Proyectos' });
-});
 
 // GET /experiences - Ver todos los proyectos
-app.get('/experiences', (req, res) => {
-    res.json(experiences); 
+app.get('/experience', (req, res) => {
+    res.json(experience); 
 });
 
-// GET /projects/:id - Ver un proyecto específico
+// GET /experience/:id - Ver un proyecto específico
 app.get('/projects/:id', (req, res) => {
-    const project = experiences.find(p => p.id === parseInt(req.params.id));
+    const project = experience.find(p => p.id === parseInt(req.params.id));
 
     if (!project) {
         return res.status(404).json({ error: 'Proyecto no encontrado' });
@@ -75,16 +71,19 @@ app.get('/projects/:id', (req, res) => {
 
 // POST /projects - Crear un proyecto
 app.post('/projects', (req, res) => {
-    const { company, role, startDate, endDate, description, tech, } = req.body;
+    const { company, role, startDate, endDate, description, tech, highlights } = req.body;
 
-    if (!name) {
-        return res.status(400).json({ error: 'El campo "name" es requerido' });
-    }
+   
 
-    const newProject = {
+    const newExperience = {
         id: nextId++,
-        name,
-        stars: stars || 0,
+        company,
+        role,
+        startDate,
+        endDate,
+        description,
+        tech, 
+        highlights
     };
 
     projects.push(newProject);
